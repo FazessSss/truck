@@ -140,3 +140,42 @@
     line-height: 114%;
     color: #fff;
   }
+  .section1{
+    background-image: url(../images/bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+  .swiper-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px  0 15px ;
+  }
+  .swiper-slide{
+    padding: 0 15px  0 15px ;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 760px) {
+    .swiper-button-next {
+      right: 20px;
+      transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+      left: 20px;
+      transform: rotate(90deg);
+    }
+  }
