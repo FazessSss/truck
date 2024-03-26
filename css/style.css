@@ -243,14 +243,67 @@
   .swiper-button-prev{
     position: absolute;
   }
-  .about{
-   
+  .about>.container>p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 200%;
+    text-align: center;
+    color: #fff;
+    max-width: 812px;
+    margin-left: 149px;
   }
-
-  
-  
-  
-  
+  .button-prev>button>img{
+    position: absolute;
+    left: 18.75%;
+  }
+  .slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -74px;
+    padding-bottom: 40px;
+  }
+  .button-next>button>img{
+    position: absolute;
+    right: 18.75%;
+  }
+  .about-top>h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #00a3ff;
+    padding-top: 79px;
+    padding-bottom: 10px;
+  }
+  .about{
+    background-image: url(../images/bac2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+  .about-top>h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 20px;
+  }
+  .about>.slider{
+    background-image: url(../images/Mask\ Group.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+  .about-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
   
   
   
