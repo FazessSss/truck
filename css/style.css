@@ -624,7 +624,7 @@
     padding-right: 91px;
     padding-top: 7px;
   }
-  .tab-content{
+  .tabs-item{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -658,6 +658,30 @@
     text-align: center;
     color: #fff;
   }
+  .tabs-item:not(._active) {
+    display: none;
+ }
+ .mazok2{
+  position: absolute;
+  top: -20px;
+ }
+ .section2{
+  position: relative;
+ }
+ .mazok1{
+  position: absolute;
+  top: -20px;
+ }
+ .about{
+  position: relative;
+ }
+
+
+
+
+
+
+
   
   
   
