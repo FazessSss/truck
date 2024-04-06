@@ -65,3 +65,20 @@ tabsButtons.forEach(btn => {
     nextActiveItem.classList.add('_active');
   });
 })
+
+
+
+const btnUp = {
+  el: document.querySelector('.bot_up'),
+    addEventListener() {
+      document.QuerySelector('.bot_up').onclick = () => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }
+
+btnUp.addEventListener();
