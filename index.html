@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="top">
         <div class="header-top">
             <div class="container">
                 <div class="ful-hd">
-                    <button><img src="images/Logo.svg" alt="logo"></button>
+                    <button id="callback-button"><img src="images/Logo.svg" alt="logo"></button>
                 <div class="head2">
                     <div class="first2">
                         <img src="images/point.svg" alt="point">
@@ -1106,12 +1106,27 @@
             <p>
                 © clean-track, 2021
             </p>
-            <button class="bot_up">
-                Наверх
-            </button>
+            <a href="#top" class="bot_up">Наверх</a>
         </div>
         </div>
 </footer>
+<div class="modal" id="modal-1">
+    <div class="modal__content">
+       <div class="modal-con-c">
+        <h2>
+            Свяжитесь с нами сейчас!
+        </h2>
+        <img src="images/elements.svg" alt="el">
+        <form>
+            <input type="text" id="name" placeholder="Ваше имя">
+        </form>
+        <input name="guruweba_example_tel" type="tel" placeholder="Ваш телефон"/>
+        <button><p>Заказать звонок</p><img src="images/stre.svg" alt=""></button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       </div>
+       <button class="modal__close-button"><img src="images/Union.svg" alt="k"></button>
+    </div>
+ </div>
 
 
 

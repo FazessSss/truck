@@ -68,17 +68,40 @@ tabsButtons.forEach(btn => {
 
 
 
-const btnUp = {
-  el: document.querySelector('.bot_up'),
-    addEventListener() {
-      document.QuerySelector('.bot_up').onclick = () => {
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: 'smooth'
-        });
-      }
-    }
+///////ОКНO/////////////////////////
+document.addEventListener('DOMContentLoaded', () => {  
+ 
+  // Кнопка по которой происходит клик
+  let callBackButton = document.getElementById('callback-button');
+ 
+  // Модальное окно, которое необходимо открыть
+  let modal1 = document.getElementById('modal-1');
+ 
+  // Кнопка "закрыть" внутри модального окна
+  let closeButton = modal1.getElementsByClassName('modal__close-button')[0];
+ 
+  // Тег body для запрета прокрутки
+  let tagBody = document.getElementsByTagName('body');
+ 
+  callBackButton.onclick = function (e) {
+    e.preventDefault();
+    modal1.classList.add('modal_active');
+    tagBody.classList.add('hidden');
   }
-
-btnUp.addEventListener();
+ 
+  closeButton.onclick = function (e) {
+    e.preventDefault();
+    modal1.classList.remove('modal_active');
+    tagBody.classList.remove('hidden');
+  }
+ 
+  modal1.onmousedown = function (e) {
+    let target = e.target;
+    let modalContent = modal1.getElementsByClassName('modal__content')[0];
+    if (e.target.closest('.' + modalContent.className) === null) {
+      this.classList.remove('modal_active');
+      tagBody.classList.remove('hidden');
+    }
+  };
+ 
+});
