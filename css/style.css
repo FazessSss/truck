@@ -1020,7 +1020,7 @@
   background: #fff;
   display: flex;
   align-items: center;
-
+  border-radius: 10px;
  }
  .modal-con-c{
   width: 700px;
